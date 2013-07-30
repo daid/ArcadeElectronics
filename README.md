@@ -18,3 +18,12 @@ Features
 	* 50x25mm: Only base features with pin connectors. 4 direction inputs, 7 button inputs 
 	* 25x25mm: Only base features with pin connectors, components on both sides. 4 direction inputs, 7 button inputs 
 
+Organization
+============
+The following directories are in this project:
+* Electronics - Contain the KiCAD design files
+* Software/firmware/bootloader - Modified HIDBoot
+* Software/firmware/arcade - Main firmware for the Arcade controller
+* Software/computer/commandline - Commandline application to change the controller configuration, and control the LEDs
+* Software/computer/lib - Library shared between different applications for custom commands to the ArcadeController
+* Software/computer/gui_test - SDL based application to verify the Keyboard/Joystick/Mouse inputs
