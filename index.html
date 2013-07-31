@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Arcadeelectronics by daid</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Arcadeelectronics</h1>
+        <h2>V-USB based Electronics board for Arcade controls</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/daid/ArcadeElectronics/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/daid/ArcadeElectronics/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/daid/ArcadeElectronics" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="arcadeelectronics" class="anchor" href="#arcadeelectronics"><span class="octicon octicon-link"></span></a>ArcadeElectronics</h1>
+
+<p>V-USB based Electronics board for Arcade controls</p>
+
+<h1>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>V-USB based USB Interface emulating a mouse, keyboard and gamepad with full configuration of button mapping (no drivers required)</li>
+<li>4 way digital joystick + 7 button connections. 4 way joystick inputs can also be used for analogue joystick.</li>
+<li>16 LED output pins (max current total 200mA) which can also be used as inputs. And 8 are also mapped wired to 1A higher power outputs with external power supply (optional hardware)</li>
+<li>RFM12 wireless transiever (optional hardware) allows communication with other controllers and building of wireless controllers with 2 boards.</li>
+<li>Full open-source hardware &amp; open-source software - Build with Free-Open-Source tools (KiCAD &amp; AVR-GCC)</li>
+<li>ISP header to program the AVR (reset line can be cut and re-wired to have the board function as an programmer on the same header)</li>
+<li>USB-micro or USB-B connector depending on your taste</li>
+<li>Different small board designs, depending on your requirements:
+
+<ul>
+<li>100x50mm: Fully featured, has option for 16 LED outputs, of which 8 can be configured for high power. Has wireless RFM12 option. 4 direction inputs, 7 button inputs</li>
+<li>50x50mm: Only base features with screw connectors. 4 direction inputs, 7 button inputs.</li>
+<li>50x25mm: Only base features with pin connectors. 4 direction inputs, 7 button inputs </li>
+<li>25x25mm: Only base features with pin connectors, components on both sides. 4 direction inputs, 7 button inputs </li>
+</ul>
+</li>
+</ul><h1>
+<a name="organization" class="anchor" href="#organization"><span class="octicon octicon-link"></span></a>Organization</h1>
+
+<p>The following directories are in this project:</p>
+
+<ul>
+<li>Electronics - Contain the KiCAD design files</li>
+<li>Software/firmware/bootloader - Modified HIDBoot</li>
+<li>Software/firmware/arcade - Main firmware for the Arcade controller</li>
+<li>Software/computer/commandline - Commandline application to change the controller configuration, and control the LEDs</li>
+<li>Software/computer/lib - Library shared between different applications for custom commands to the ArcadeController</li>
+<li>Software/computer/gui_test - SDL based application to verify the Keyboard/Joystick/Mouse inputs</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
